@@ -22,9 +22,9 @@ Requirements:
 
 *Discriminate users according to type of service, to avoid loss of billing by allowing common users to view premium movies.
 
-#1 $ docker run -p 8082:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:18.0.0 start-dev
+#1 Initialize docker container to deploy keycloak on port 8082
 
-    - initialize docker container to deploy keycloak on port 8082
+    - docker run -p 8082:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:18.0.0 start-dev
     
 #2 Import realm settings in keycloak interface 
 
